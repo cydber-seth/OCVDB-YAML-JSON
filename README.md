@@ -10,9 +10,9 @@ works on windows 10
 commented the crap out of the file.
 
 to do
-process all in memory
-create CSV output
-follow references to grab additional info.
-try on other OS's
-create a monthly file using freemium cloud funcitions and upload to git.
+- process all in memory
+- create CSV output
+- follow references to grab additional info.
+- try on other OS's
+- create a monthly file using freemium cloud funcitions and upload to git.
 
