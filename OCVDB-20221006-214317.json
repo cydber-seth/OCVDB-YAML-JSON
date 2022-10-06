@@ -1,0 +1,2988 @@
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "11/26/2016",
+    "discoveredBy": {
+        "domain": "https://ianduffy.ie/",
+        "name": "Ian Duffy",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://developers.redhat.com/sites/default/files/styles/share/public/SP_RHEL1_3x.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "11/26/2016",
+    "references": "https://ianduffy.ie/2016/11/26/azure-bug-bounty-pwning-red-hat-enterprise-linux/",
+    "severity": "Low",
+    "slug": "admin-azure-rh-update-infrastructure",
+    "summary": "Full administrative access to the Azure Red Hat Enterprise Linux Appliance REST API was publicly exposed.\nIt allowed malicious actors uploading packages that would be acquired by client virtual machines on their next yum update. \nThe vulnerable infrastructure supplies all the packages for all Red Hat Enterprise Linux instances booted from the Azure marketplace.\n",
+    "title": "Public admin access to Azure's Red Hat Update Infrastructure"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "AI Hub Jupyter Notebook"
+    ],
+    "contributor": "https://github.com/ds0440",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/03/10",
+    "discoveredBy": {
+        "domain": "https://blog.s1r1us.ninja/",
+        "name": "s1r1us",
+        "org": null,
+        "twitter": "S1r1u5_"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/1148496/pexels-photo-1148496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/10/17",
+    "references": [
+        "https://blog.s1r1us.ninja/research/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks"
+    ],
+    "severity": "Medium",
+    "slug": "ai-hub-jupyter-csrf",
+    "summary": "AI Hub Jupyter Notebook server lacked a check of the Origin header that\nled to a CSRF vulnerability. An attacker could have read sensitive data and execute\narbitrary actions in customer environments.\n",
+    "title": "AI Hub Jupyter Notebook instance CSRF"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "ALB"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/10/04",
+    "discoveredBy": {
+        "domain": null,
+        "name": "James Kettle (Portswigger), Arkadiy Tetelman (Chime)",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/load_balancer_request_smuggling.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Configure setting on your ALBs\n",
+    "publishedAt": "2019/10/04",
+    "references": [
+        "https://twitter.com/arkadiyt/status/1180174359840862209",
+        "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#load-balancer-attributes"
+    ],
+    "severity": "Medium",
+    "slug": "alb-http-smuggling",
+    "summary": "ALBs found vulnerable to HTTP request smuggling (desync attack).\n",
+    "title": "ALB HTTP request smuggling"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2011/06/04",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Marco Balduzzi, Jonas Zaddach, Davide Balzarotti, Engin Kirda, Sergio Loureiro",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/recovering_deleted_files.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Follow [best practices](https://aws.amazon.com/articles/how-to-share-and-use-public-amis-in-a-secure-manner/)\nwhen sharing Public AMIs\n",
+    "publishedAt": "2011/06/04",
+    "references": [
+        "http://seclab.nu/static/publications/sac2012ec2.pdf",
+        "https://aws.amazon.com/security/security-bulletins/reminder-about-safely-sharing-and-using-public-amis/"
+    ],
+    "severity": "Low",
+    "slug": "ami-recoverable-files",
+    "summary": "Researchers, while investigating the security posture of Public AMIs, were\nable to undelete files from an official image that was published by Amazon AWS.\n",
+    "title": "AWS published official AMIs with recoverable deleted files"
+}
+{
+    "affectedPlatforms": [
+        "OCI"
+    ],
+    "affectedServices": [
+        "Apiary"
+    ],
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/02/08",
+    "discoveredBy": {
+        "domain": "https://orca.security/",
+        "name": "Lidor Ben Shitrit",
+        "org": "Orca Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1583673354352-9504815ae8e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/02/08",
+    "references": [
+        "https://orca.security/resources/blog/oracle-server-side-request-forgery-ssrf-attack-metadata/"
+    ],
+    "severity": "Low",
+    "slug": "apiary-ssrf",
+    "summary": "By misusing the Apiary web service and taking advantage of Apiary's use of IMDSv1,\na remote attacker is able to retrieve sensitive information from various endpoints\nand use it to gain more access and sensitive data of other hosts in the same environment.\n",
+    "title": "Oracle Apiary SSRF"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2016/11/16",
+    "discoveredBy": {
+        "domain": "https://www.atlassian.com/",
+        "name": "Daniel Grzelak",
+        "org": "Atlassian",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "ongoing",
+    "image": "https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "Audit your vendor roles.\n",
+    "publishedAt": "2016/11/16",
+    "references": [
+        "https://www.youtube.com/watch?v=8ZXRw4Ry3mQ",
+        "https://www.praetorian.com/blog/aws-iam-assume-role-vulnerabilities/"
+    ],
+    "severity": "Medium",
+    "slug": "assumerole-confused-deputy",
+    "summary": "3rd party vendors can (and sometimes do) incorrectly implement sts:ExternalId in their\nAWS role trust policies, leading to confused deputy issues. These misconfigurations could\nallow customers to access other customers' data. Although vendors are responsible for\nensuring their own configurations are correct, AWS could theoretically add mitigations\nto prevent and detect this issue.\n",
+    "title": "3rd party vendor confused deputy via AssumeRole"
+}
+{
+    "affectedPlatforms": [
+        "OCI"
+    ],
+    "affectedServices": [
+        "OCI Volumes"
+    ],
+    "contributor": "https://github.com/nirohfeld",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/06/09",
+    "discoveredBy": {
+        "domain": "https://wiz.io/",
+        "name": "Elad Gabay",
+        "org": "Wiz",
+        "twitter": "eladgabay_"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/attachme.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required.\n",
+    "publishedAt": "2022/09/20",
+    "references": [
+        "https://wiz.io/blog/attachme-oracle-cloud-vulnerability-allows-unauthorized-cross-tenant-volume-access"
+    ],
+    "severity": "High",
+    "slug": "attachme",
+    "summary": "Any unattached storage volume, or attached storage volumes allowing multi-attachment,\ncould have been read from or written to as long as an attacker knew their Oracle Cloud Identifier (OCID),\nallowing sensitive data to be exfiltrated or even more impactful attacks to be initiated via\nexecutable file manipulation in the target tenant's environment.\n",
+    "title": "AttachMe"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Automation Service"
+    ],
+    "contributor": "https://github.com/christophetd",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/06",
+    "discoveredBy": {
+        "domain": "https://orca.security/",
+        "name": "Yanir Tsarimi",
+        "org": "Orca Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1651491602333-fea83f1d9107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required. As a general practice, use the least-privilege\nprinciple, including on managed identities assigned to automation accounts. While\nthis would not have prevented the leakage of API credentials, it would have reduced\nthe blast radius.\n",
+    "publishedAt": "2022/03/07",
+    "references": [
+        "https://orca.security/resources/blog/autowarp-microsoft-azure-automation-service-vulnerability/"
+    ],
+    "severity": "Critical",
+    "slug": "autowarp",
+    "summary": "An exposed endpoint in the Azure Automation Service allowed to steal Azure\nAPI credentials from other customers\n",
+    "title": "AutoWarp"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "API Gateway"
+    ],
+    "contributor": "https://github.com/a10ns",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/11/10",
+    "discoveredBy": {
+        "domain": "https://www.intruder.io/",
+        "name": "Daniel Thatcher",
+        "org": "intruder",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://assets.website-files.com/61dd9339d05701829d0b3241/61dd9339d05701c9830b35ef_smugglers-p-1600.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/11/10",
+    "references": [
+        "https://www.intruder.io/research/practical-http-header-smuggling"
+    ],
+    "severity": "Low",
+    "slug": "aws-api-gw-smuggling",
+    "summary": "A flaw in AWS API Gateway enabled hiding HTTP request headers. Tampering\nwith HTTP requests visibility enabled bypassing IP restrictions, cache poisoning\nand request smuggling.\n",
+    "title": "AWS API Gateway HTTP header smuggling"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "EKS"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/07/15",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Felix Wilhelm",
+        "org": "Google",
+        "twitter": "_fel1x"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://cdn.pixabay.com/photo/2017/02/19/23/10/finger-2081169_1280.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/10/06",
+    "references": [
+        "https://bugs.chromium.org/p/project-zero/issues/detail?id=2066",
+        "https://github.com/kubernetes-sigs/aws-iam-authenticator/pull/341"
+    ],
+    "severity": "Low",
+    "slug": "aws-auth-multiple-issues",
+    "summary": "Amazon Elastic Kubernetes Service (EKS) uses IAM to provide authentication to the cluster\nthrough the AWS IAM Authenticator for Kubernetes (aws-iam-authenticator). Multiple issues\nwere identified in the authenticator that could have allowed exploitation, namely (1) a\nlax regular expression used to verify presigned URLs; (2) HTTP client redirect follow\n(due to using Golang HTTP client in its default configuration); (3) use of the Golang URL.Query\nfunction (which silently drops parameters that Go considers invalid, rather than raising\nan error and rejecting invalid tokens); and (4) no verification that the cluster uses Go\nversions newer than 1.12 (as older versions are vulnerable to request smuggling).\n",
+    "title": "Multiple issues in AWS IAM Authenticator for Kubernetes"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Cloudshell"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/02/08",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Felix Wilhelm",
+        "org": "Google",
+        "twitter": "_fel1x"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2020/12/15/Site-Merch_AWS-Cloudshell_SocialMedia_2.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/03/10",
+    "references": [
+        "https://bugs.chromium.org/p/project-zero/issues/detail?id=2154",
+        "https://twitter.com/_fel1x/status/1391712232380194818"
+    ],
+    "severity": "Medium",
+    "slug": "aws-cloudshell-terminal-escape",
+    "summary": "If attacker controlled data is viewed in Cloudshell it could have led to\ncode execution. This exact same issue existed in Azure previously.\n",
+    "title": "AWS CloudShell terminal escape"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Codestar"
+    ],
+    "contributor": "https://github.com/blakedunson",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/03/19",
+    "discoveredBy": {
+        "domain": "rhinosecuritylabs.com",
+        "name": "Spencer Gietzen",
+        "org": "Rhino Security Labs",
+        "twitter": "SpenGietz"
+    },
+    "exploitabilityPeriod": "Ongoing",
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-codestar-privilege-escalation.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "If not using the CodeStar service, ensure that the \u201caws-codestar-service-role\u201d is removed from all your accounts. \nApply principle of least privilege to all CodeStar-related resources to ensure the codestar:CreateProjectFromTemplate \npermission is only granted when absolutely necessary. Implement monitoring on any users with access to the \ncodestar:CreateProject and iam:PassRole actions to detect potential escalation attempts.\n",
+    "publishedAt": "2019/06/18",
+    "references": [
+        "https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/"
+    ],
+    "severity": "High",
+    "slug": "aws-codestar-privilege-escalation",
+    "summary": "The AWS CodeStar service had an undocumented API (codestar:CreateProjectFromTemplate) that allowed\nusers with broadly-scoped CodeStar permissions to create a CodeStar project. As part of the creation\nprocess, AWS would create a new CodeStarWorker IAM policy & attach it to the user making the call.\nThis policy granted full access to over 50 AWS services, including iam:AttachRolePolicy, iam:AttachUserPolicy and iam:PutRolePolicy permissions,\nwhich would allow the user to escalate to full administrator access. Following disclosure, AWS removed\nthe majority of access granted by the CodeStarWorker policy, but this is still a viable escalation path if\nthere are other misconfigurations in the environment.\n",
+    "title": "IAM privilege escalation via undocumented CodeStar API"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/01/23",
+    "discoveredBy": {
+        "domain": "https://www.upguard.com/",
+        "name": null,
+        "org": "Upguard",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1589630388147-68b3a2172e0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/01/23",
+    "references": [
+        "https://www.upguard.com/breaches/identity-and-access-misstep-how-an-amazon-engineer-exposed-credentials-and-more",
+        "https://www.theregister.com/2020/01/23/aws_engineer_credentials_github/",
+        "https://github.com/SummitRoute/csp_security_mistakes/issues/17"
+    ],
+    "severity": null,
+    "slug": "aws-data-post",
+    "summary": "An AWS employee pushed sensitive data to a public github bucket, including customer information and credentials.\nNote: This issue is outside the scope of this database's usual criteria for inclusion,\nbut has been kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.\n",
+    "title": "AWS uploaded sensitive data to public GitHub bucket"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/12/20",
+    "discoveredBy": null,
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1673&q=80",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required \n",
+    "publishedAt": "2020/12/20",
+    "references": [
+        "https://aws.amazon.com/blogs/security/fall-2020-soc-reports-now-available-with-124-services-in-scope/"
+    ],
+    "severity": null,
+    "slug": "aws-fall-2020-soc2",
+    "summary": "Information about this issue is under NDA, but AWS customers can read about it on pages 120-121 of the report,\nwhich is available for download through AWS Artifact.\nNote: This issue is outside the scope of this database's usual criteria for inclusion, but has\nbeen kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.\n",
+    "title": "AWS SOC 2 type 2 failure (Fall 2020)"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/11/15",
+    "discoveredBy": null,
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/11/15",
+    "references": [
+        "https://aws.amazon.com/blogs/security/fall-2021-soc-reports-now-available-with-141-services-in-scope/"
+    ],
+    "severity": null,
+    "slug": "aws-fall-2021-soc2",
+    "summary": "Information about this issue is under NDA, but AWS customers can read about it on page 98 of the report,\nwhich is available for download through AWS Artifact.\nNote: This issue is outside the scope of this database's usual criteria for inclusion, but has\nbeen kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.\n",
+    "title": "AWS SOC 2 type 2 failure (Fall 2021)"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "EC2"
+    ],
+    "contributor": "https://github.com/blakedunson",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/08/04",
+    "discoveredBy": {
+        "domain": null,
+        "name": null,
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": "ongoing",
+    "image": "https://images.pexels.com/photos/330771/pexels-photo-330771.jpeg?cs=srgb&dl=pexels-markus-spiske-330771.jpg&fm=jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Enforce the use of IMDSv2 on the instance. This will require use of a POST request to generate an access token,\nwhich mitigates against most SSRF vulnerabilities\n",
+    "publishedAt": "2019/08/04",
+    "references": [
+        "https://blog.appsecco.com/an-ssrf-privileged-aws-keys-and-the-capital-one-breach-4c3c2cded3af",
+        "https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/",
+        "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-options.html"
+    ],
+    "severity": "Medium",
+    "slug": "aws-imdsv1-credential-exfiltration",
+    "summary": "AWS offers a metadata service accessible to most EC2 Instances via a simple GET request to 169.254.169.254.\nIf an instance has an SSRF vulnerability, attackers can access the metadata service & exfiltrate the credentials \nof an attached IAM role to gain privileged access to the relevant AWS environment.\n",
+    "title": "AWS IAM role credential exfiltration via EC2 Instance Metadata Service (IMDSv1)"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/05/01",
+    "discoveredBy": {
+        "domain": "https://www.mend.io/",
+        "name": null,
+        "org": "Mend Diffend",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/4498122/pexels-photo-4498122.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": null,
+    "publishedAt": "2022/05/01",
+    "references": [
+        "https://www.mend.io/resources/blog/aws-targeted-by-a-package-backfill-attack/"
+    ],
+    "severity": "Low",
+    "slug": "aws-package-backfill",
+    "summary": "Two malicious versions were created of packages previously used by AWS.\nThe packages were officially authored and maintained by AWS before they\nwere removed by their legitimate author, and once the packages were\nremoved, their names became available and the two packages were then\npopulated with malicious code. If AWS-deployed software had any dependencies\non these packages, this would have led to a dependency confusion attack.\n",
+    "title": "AWS package backfill attack"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "RDS"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/09",
+    "discoveredBy": {
+        "domain": "https://www.lightspin.io/",
+        "name": "Gafnit Amiga",
+        "org": "Lightspin",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/04/11",
+    "references": [
+        "https://blog.lightspin.io/aws-rds-critical-security-vulnerability",
+        "https://aws.amazon.com/security/security-bulletins/AWS-2022-004/"
+    ],
+    "severity": "High",
+    "slug": "aws-rds-local-file-read",
+    "summary": "A vulnerability was discovered in the Aurora PostgreSQL log_fdw extension\nfor Amazon Relational Database Service (RDS), allowing an attacker to read\nfiles on the EC2 host and obtain credentials for an internal AWS service.\n",
+    "title": "AWS RDS local file read"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "RDS"
+    ],
+    "contributor": "https://github.com/riyazwalikar",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/26",
+    "discoveredBy": {
+        "domain": "https://kloudle.com/",
+        "name": "Riyaz Walikar",
+        "org": "Kloudle",
+        "twitter": "riyazwalikar"
+    },
+    "exploitabilityPeriod": "Ongoing",
+    "image": "https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "For databases other than MySQL and MariaDB, modify the require_secure_transport or rds.force_ssl\nvalues of the attached DB cluster parameter group. For MySQL and MariaDB there is no known workaround,\nother than ensuring clients connect to these database types only within the VPC. In general, ensure that\nRDS database instances without SSL/TLS enabled are not exposed over public networks.\n",
+    "publishedAt": "2022/03/10",
+    "references": [
+        "https://kloudle.com/blog/aws-rds-does-not-force-clients-to-connect-using-a-secure-transport-layer",
+        "https://kloudle.com/academy/fixing-the-default-insecure-network-connection-option-for-rds-instances"
+    ],
+    "severity": "Low",
+    "slug": "aws-rds-no-ssl-tls",
+    "summary": "The AWS RDS service does not enable secure transport layer security by default, allowing clients to connect insecurely.\nAdditionally, for the more commonly used MySQL and MariaDB RDS engine types, this setting cannot be enabled at all.\n",
+    "title": "AWS RDS does not enforce SSL/TLS encryption"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/10/19",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ryan Gerstenkorn",
+        "org": null,
+        "twitter": "Ryan_Jarv"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/1546003/pexels-photo-1546003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/10/19",
+    "references": [
+        "https://github.com/RyanJarv/EC2FakeImds",
+        "https://blog.ryanjarv.sh/2020/10/19/imds-persistence.html"
+    ],
+    "severity": "Low",
+    "slug": "aws-route-table-modify",
+    "summary": "An attacker with sufficient privileges in AWS to modify the route table\nand some other EC2 privileges, could pretend to be a metadata server and provide\nan attacker controlled bootup script to EC2s to move laterally.\n",
+    "title": "Route table modification to imitate metadata service"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "S3"
+    ],
+    "contributor": "https://github.com/jon-trust",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/07/27",
+    "discoveredBy": {
+        "domain": "https://trustoncloud.com/",
+        "name": "Jonathan Rault",
+        "org": "TrustOnCloud",
+        "twitter": "jo_n_go"
+    },
+    "exploitabilityPeriod": "until 2022/07/08",
+    "image": "https://images.pexels.com/photos/5859553/pexels-photo-5859553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/07/27",
+    "references": [
+        "https://twitter.com/trustoncloud/status/1549005011463446528",
+        "https://github.com/trustoncloud/threatmodel-for-aws-s3"
+    ],
+    "severity": "Low",
+    "slug": "aws-s3-recon-account-id-of-bucket",
+    "summary": "Using CloudTrail S3 data events, it was possible to determine the AWS account ID of\nany existing S3 bucket by calling any S3 API, getting denied, and looking at the value in the resource\nkey in error message that showed up in CloudTrail.\n",
+    "title": "CloudTrail S3 data events leak bucket Account ID"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": null,
+    "discoveredBy": {
+        "domain": null,
+        "name": "Colin Percival",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": "until December 18th, 2008",
+    "image": "https://c4.wallpaperflare.com/wallpaper/600/33/115/pattern-line-emission-background-wallpaper-preview.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required, SigV1 is deprecated at this point\n",
+    "publishedAt": "2008/12/18",
+    "references": [
+        "http://www.daemonology.net/blog/2008-12-18-AWS-signature-version-1-is-insecure.html"
+    ],
+    "severity": "Medium",
+    "slug": "aws-sigv1-insecure",
+    "summary": "When making authenticated API requests to AWS, the requests must be signed\nwith your AWS access key. The initial signing algorithm, SigV1, was vulnerable\nto collisions. A person-in-the-middle attack would be able to modify signed requests\nvia specially constructed collisions.\n",
+    "title": "Signature version 1 (SigV1) is insecure"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "AWS WAF"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/09/03",
+    "discoveredBy": {
+        "domain": "https://osamaelnaggar.com/",
+        "name": "Osama Elnaggar",
+        "org": null,
+        "twitter": "https://twitter.com/securityfu"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/aws-wafs-dangerous-defaults.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/10/03",
+    "references": [
+        "https://osamaelnaggar.com/blog/aws_waf_dangerous_defaults/",
+        "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-changelog.html"
+    ],
+    "severity": "Medium",
+    "slug": "aws-waf-sql-injection",
+    "summary": "AWS WAF using the Core Rules set allowed SQL injection. In AWS WAF only the first 8 KB (8,192 bytes) of the request body are forwarded to AWS WAF for inspection, but AWS Managed rules allowed requests up to 10 KB.\nAn attacker could send a request larger than 8 KB but smaller than 10 KB, with a malicious payload located after the first 8,192 bytes, and thereby pass the WAFs inspection. \nTo fix this issue, AWS reduced the request size limit to 8 KB.\n",
+    "title": "AWS WAF configuration allows SQL injection"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": "AWS Management Console",
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/03/13",
+    "discoveredBy": {
+        "domain": "https://frichetten.com/",
+        "name": "Nick Frichette",
+        "org": null,
+        "twitter": "Frichette_n"
+    },
+    "exploitabilityPeriod": "March 2021 - June 2021",
+    "image": "https://images.pexels.com/photos/768093/pexels-photo-768093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/06/03",
+    "references": [
+        "https://twitter.com/Frichette_n/status/1400517723910819844",
+        "https://frichetten.com/blog/xss_in_aws_console/"
+    ],
+    "severity": "Low",
+    "slug": "aws-xss-console",
+    "summary": "An adversary could gain access to IAM credentials in a victim's account, and make an API request to Elastic Beanstalk (even if they didn't have the proper IAM permissions). This request would be displayed in the management console in the Elastic Beanstalk section. Due to improper sanitization, an attacker could insert an XSS payload that would execute in a victim's browser.\n",
+    "title": "Elastic Beanstalk - XSS in Web Console"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Cloud Shell",
+        "Container Instances"
+    ],
+    "contributor": "https://github.com/yuvalavra",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/01/20",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Chen Cohen",
+        "org": "eBay",
+        "twitter": "chencococococo"
+    },
+    "exploitabilityPeriod": "until January 30th, 2020",
+    "image": "https://images.pexels.com/photos/157517/pexels-photo-157517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/02/15",
+    "references": [
+        "https://hencohen10.medium.com/i-own-your-cloud-shell-taking-over-azure-cloud-shell-kubernetes-cluster-through-unsecured-558621519cf9"
+    ],
+    "severity": "High",
+    "slug": "azure-cloud-shell-and-container-instance-lpe",
+    "summary": "An attacker could gain root privileges on their Azure Cloud Shell container,\nescape from the container, and then gain root privileges on the underlying node,\nthe root cause being an insecure kubelet port (10250), among other cluster misconfigurations.\nOnce they could access the node filesystem, an attacker could extract kubelet API\ncredentials which allowed listing all pods and nodes in the cluster, including\nthose belonging to other tenants. Moreover, an attacker could bypass RBAC policies\nin the cluster by deploying a pod with the \"NodeSelector\" flag, and thereby escalate\ntheir privileges to root on other tenants' containers (the same issue affected\nAzure Container Instances).\n",
+    "title": "Azure Cloud Shell and Container Instances breakout"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Cloud Shell"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/08/20",
+    "discoveredBy": {
+        "domain": "https://lightspin.io/",
+        "name": "Gafnit Amiga",
+        "org": "Lightspin",
+        "twitter": "gafnitav"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-cloudshell-injection.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required.\n",
+    "publishedAt": "2022/09/20",
+    "references": [
+        "https://blog.lightspin.io/azure-cloud-shell-command-injection-stealing-users-access-tokens"
+    ],
+    "severity": "High",
+    "slug": "azure-cloudshell-injection",
+    "summary": "An issue in Azure Cloud Shell could have allowed an attacker to take over\nan Azure App Service domain and leverage it to inject and execute\ncommands in other tenants' terminals if they navigated to the domain while\nlogged into their account. Using this method, an attacker could query the\nAzure IMDS on other tenants' behalf and thereby obtain their access tokens.\n",
+    "title": "Azure Cloud Shell access token theft"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Cloudshell"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/01/09",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Felix Wilhelm",
+        "org": "Google",
+        "twitter": "_fel1x"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://azurecomcdn.azureedge.net/cvt-7d12cb554a538170e8ffd3f464d6d95301d16aeeecba8d10775a17b0cdc5f7a2/svg/cloud-shell.svg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2019/01/09",
+    "references": [
+        "https://twitter.com/_fel1x/status/1083085715565621250"
+    ],
+    "severity": "Medium",
+    "slug": "azure-cloudshell-terminal-escape",
+    "summary": "If attacker controlled data is viewed in Cloudshell it could have led to\ncode execution. This exact same issue was later discovered in AWS as well.\n",
+    "title": "Azure Cloud Shell terminal escape"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/04/05",
+    "discoveredBy": {
+        "domain": "https://www.secureworks.com/",
+        "name": null,
+        "org": "Secureworks",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "knownITWExploitation": "No",
+    "manualRemediation": null,
+    "publishedAt": "2022/04/05",
+    "references": [
+        "https://www.secureworks.com/research/azure-active-directory-exposes-internal-information"
+    ],
+    "severity": "Low",
+    "slug": "azure-info-disclosure",
+    "summary": "Undocumented Azure AD APIs could allow access to internal information of any organization\nthat uses Azure AD. Collected details included licensing information, mailbox information, and\ndirectory synchronization status.\n",
+    "title": "Azure AD information disclosure via undocumented APIs"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Azure Logic Apps"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/03/01",
+    "discoveredBy": {
+        "domain": "https://www.netspi.com/",
+        "name": "Josh Magri",
+        "org": "NetSPI",
+        "twitter": "passthehashbrwn"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure_logic_app_privilege_escalation.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/03/09",
+    "references": [
+        "https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-logic-app-contributor-escalation-to-root-owner/"
+    ],
+    "severity": "Medium",
+    "slug": "azure-logic-app-contributor-escalation-to-root-owner",
+    "summary": "Azure Logic Apps use API Connections to authenticate actions to services. Having Contributor access to\nan Azure Resource Manager (ARM) API Connection would allow someone to create arbitrary role assignments as the connected user.\nThis was supposed to be limited to actions at the Resource Group level, but an attacker could escape to the Subscription or Root level with a path traversal payload.\nThe root cause of this behavior was that such a payload would meet the Swagger API definition,\nand it would be resolved by the server, resulting in a request to an unintended scope.\n",
+    "title": "Logic Apps privilege escalation to root"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": "Traffic Manager",
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "10/08/2018",
+    "discoveredBy": {
+        "domain": "https://0xpatrik.com/",
+        "name": "Patrick Hudak",
+        "org": null,
+        "twitter": "https://twitter.com/0xpatrik"
+    },
+    "exploitabilityPeriod": "ongoing",
+    "image": "https://images.pexels.com/photos/186537/pexels-photo-186537.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Review your DNS zones and identify CNAME records that are dangling or have been taken over.\nFor further recommendations, review Microsoft's article on subdomain takeovers (linked in references).\n",
+    "publishedAt": "10/08/2018",
+    "references": [
+        "https://0xpatrik.com/subdomain-takeover-starbucks-ii/",
+        "https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover"
+    ],
+    "severity": "Low",
+    "slug": "azure-subdomain-takeover",
+    "summary": "Patrick Hudak demonstrated possible subdomain takeover using the Traffic Manager in Azure.\n",
+    "title": "Subdomain takeover via Azure Traffic Manager"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Azure WAF"
+    ],
+    "contributor": "https://github.com/justmorpheus",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/06/24",
+    "discoveredBy": {
+        "domain": "https://justm0rph3u5.medium.com",
+        "name": "Divyanshu Shukla",
+        "org": null,
+        "twitter": "justm0rph3u5"
+    },
+    "exploitabilityPeriod": "until July 16th, 2021",
+    "image": "https://images.pexels.com/photos/1662298/pexels-photo-1662298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/07/01",
+    "references": [
+        "https://medium.com/secjuice/waf-evasion-techniques-718026d693d8",
+        "https://medium.com/bugbountywriteup/module-1-introduction-pentesting-bypassing-cloud-waf-fun-profit-75f315951aa8",
+        "https://twitter.com/justm0rph3u5/status/1542943538857799680"
+    ],
+    "severity": "Medium",
+    "slug": "azure-waf-bypass",
+    "summary": "Azure Web Application Firewall (WAF) with OWASP 3.2 managed rule set and below was\nvulnerable to command injection bypass using globbing patterns (incorporating the\nwildcard \"?\" in command syntax). For example, while attempting access to \"/etc/passwd\"\nwould be blocked, a command targeting \"/et?/passwo?d\" would be allowed.\n",
+    "title": "Azure WAF managed rule set globbing pattern bypass"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "ACI"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/09/09",
+    "discoveredBy": {
+        "domain": "https://www.paloaltonetworks.com/",
+        "name": "Yuval Avrahami",
+        "org": "Palo Alto",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/845265/pexels-photo-845265.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Revoking any privileged credentials that were deployed to the\nplatform before Aug. 31, 2021, and checking their access logs for irregularities.\n",
+    "publishedAt": "2021/09/09",
+    "references": [
+        "https://unit42.paloaltonetworks.com/azure-container-instances/"
+    ],
+    "severity": "Critical",
+    "slug": "azurescape",
+    "summary": "Cross-account container escape\n",
+    "title": "Azurescape"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "CloudFormation"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/09/09",
+    "discoveredBy": {
+        "domain": "https://orca.security/",
+        "name": "Tzah Pahima",
+        "org": "Orca Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/51359/airshow-fighter-jets-aerobatic-fighter-51359.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/01/13",
+    "references": [
+        "https://orca.security/resources/blog/aws-cloudformation-vulnerability/",
+        "https://orca.security/resources/blog/breakingformation-technical-vulnerability-walkthrough/",
+        "https://aws.amazon.com/security/security-bulletins/AWS-2022-001/"
+    ],
+    "severity": "Critical",
+    "slug": "breakingformation",
+    "summary": "Read access of host of AWS internal Cloudformation service via XXE SSRF.\nThe level of access with the compromised IAM role from there is unclear.\n",
+    "title": "BreakingFormation"
+}
+{
+    "affectedPlatforms": [
+        "Azure",
+        "AWS"
+    ],
+    "affectedServices": [
+        "GKE",
+        "EKS"
+    ],
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/06/15",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Etienne Champetier",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/762679/pexels-photo-762679.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/06/15",
+    "references": [
+        "https://blog.champtar.fr/Metadata_MITM_root_EKS_GKE/"
+    ],
+    "severity": "Medium",
+    "slug": "cap-net-raw-metadata-mitm",
+    "summary": "An attacker with access to a hostNetwork=true container with CAP_NET_RAW\ncapability can listen to all the traffic going through the host and inject arbitrary\ntraffic, allowing to tamper with most unencrypted traffic (HTTP, DNS, DHCP, ...),\nand disrupt encrypted traffic. In GKE the host queries the metadata service at\nhttp://169[.]254.169.254 to get information, including the authorized SSH keys.\nBy manipulating the metadata service responses and injecting our own SSH key, it\nis possible to gain root privilege on the host.\n",
+    "title": "GKE and EKS CAP_NET_RAW metadata service MITM root privilege escalation"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Cosmos DB"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/08/09",
+    "discoveredBy": {
+        "domain": "https://www.wiz.io/",
+        "name": "Nir Ohfeld, Sagi Tzadik",
+        "org": "Wiz",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "2017 - 2021",
+    "image": "https://www.datocms-assets.com/75231/1659890296-chaosdb-0.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Regenerate primary read/write key.\n",
+    "publishedAt": "2021/08/26",
+    "references": [
+        "https://chaosdb.wiz.io/",
+        "https://www.wiz.io/blog/chaosdb-how-we-hacked-thousands-of-azure-customers-databases",
+        "https://www.wiz.io/blog/chaosdb-explained-azures-cosmos-db-vulnerability-walkthrough"
+    ],
+    "severity": "Critical",
+    "slug": "chaosdb",
+    "summary": "Azure's Cosmos DB database service was vulnerable to remote account takeover.\nAny Azure user could gain full admin access to other customers' Cosmos DB instances without authorization.\nThe vulnerability had a trivial exploit that doesn't require any previous access to the target environment.\n",
+    "title": "ChaosDB"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "GKE"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/03/09",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Peter Collins",
+        "org": null,
+        "twitter": "itspeterc"
+    },
+    "exploitabilityPeriod": "ongoing",
+    "image": "https://cdn.pixabay.com/photo/2019/09/04/13/00/steering-wheel-4451548_1280.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/06/07",
+    "references": [
+        "https://cloud.google.com/blog/products/identity-security/updates-coming-for-authorized-networks-and-cloud-runfunctions-on-gke",
+        "https://twitter.com/itspeterc/status/1534205155914264576"
+    ],
+    "severity": "Medium",
+    "slug": "cloud-func-gke-bypass",
+    "summary": "Executing Cloud Functions in any project and in any organization allows bypassing the GKE Authorized Networks (aka Kubernetes \ncontrol plane firewalls) of a cluster in a different project or organization.\n",
+    "title": "GKE Authorized Networks bypass via Cloud Functions"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "CloudFormation"
+    ],
+    "contributor": "https://github.com/Rami McCarthy",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/01",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ian Mckay",
+        "org": null,
+        "twitter": "iann0036"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudformation-dos.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/09/01",
+    "references": [
+        "https://onecloudplease.com/blog/security-september-fun-with-fncidr"
+    ],
+    "severity": "Low",
+    "slug": "cloudformation-dos",
+    "summary": "An attacker with the ability to create CloudFormation stacks could cause\na denial-of-service on some CloudFormation actions within a single AWS account.\n",
+    "title": "CloudFormation denial of service (in a single account)"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "CloudFormation"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/01/21",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Aidan Steele",
+        "org": null,
+        "twitter": "__steele"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudformation_cred_leak.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/09/22",
+    "references": [
+        "https://onecloudplease.com/blog/security-september-cataclysms-in-the-cloud-formations"
+    ],
+    "severity": "High",
+    "slug": "cloudformation_cred_leak",
+    "summary": "CloudFormation allows the use of Lambda-backed resource providers,\nwherein Lambda can be used to write custom provisioning logic to be\nexecuted during CloudFormation stack operations. The aforementioned\nLambda functions were executed in an AWS-managed account (thus\neffectively allowing arbitrary code execution in that account),\nand were passed a set of credentials (\"platformCredentials\") for a\nrole in this account that had several EventBridge permissions.\nThese were sufficient for an attacker to create new rules in the AWS-managed\naccount that leaked credentials belonging to other users of resource\nproviders. For example, creating a rule that matched events with\n{\"detail-type\": [\"AWS API Call via CloudTrail\"]} exposed records\nof other tenants' API calls, which included copies of credentials\nfor roles in other tenants' accounts.\n",
+    "title": "CloudFormation resource provider credentials leak"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "CloudFormer"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/25",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Karim El-Melhaoui",
+        "org": null,
+        "twitter": "KarimMelhaoui"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/3789871/pexels-photo-3789871.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/09/25",
+    "references": [
+        "https://blog.karims.cloud/2020/09/25/cloudformer-review-part-1.html"
+    ],
+    "severity": "Low",
+    "slug": "cloudformer-review",
+    "summary": "An audit of an AWS open-source project identified a great deal of issues, and as a result AWS made the decision to take it down.\n",
+    "title": "CloudFormer review"
+}
+{
+    "affectedPlatforms": [
+        "GCP",
+        "Azure"
+    ],
+    "affectedServices": [
+        "Cloud SQL",
+        "Azure Database for PostgreSQL"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/01/11",
+    "discoveredBy": {
+        "domain": "https://www.wiz.io/",
+        "name": "Shir Tamari, Nir Ohfeld, Sagi Tzadik, Ronen Shustin",
+        "org": "Wiz.io",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/cloudsql-escape.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/08/11",
+    "references": [
+        "https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities"
+    ],
+    "severity": "Medium",
+    "slug": "cloudsql-escape",
+    "summary": "In GCP's case, they introduced a modification to the Cloud SQL's PostgreSQL engine allowing the role assigned to the\ntenant (cloudsqlsuperuser) to arbitrarily change the ownership of a table to any user\nor role in the database. Thus, an attacker could (1) create a new table, (2) create an\nindex function with a malicious payload, and (3) change the table owner to GCP\u2019s superuser\nrole (cloudsqladmin). Next, by initiating an ANALYZE command, the malicious function is\nexecuted with GCP\u2019s superuser high privileges. Then, an attacker could gain local privilege\nescalation to root using a symlink attack, and finally, having gained CAP_NET_ADMIN and\nCAP_NET_RAW capabilities, escape their container via TCP injection of a fake configuration\nresponse from the metadata service containing an attacker-controlled SSH key (this is only\npossible due to the fact that communication with GCP's metadata service is unencrypted and unsigned).\nA similar bug existed in Azure Database for PostgreSQL, and was part of ExtraReplica's vulnerability chain.\n",
+    "title": "Cloud SQL escape to host"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/02/03",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Aidan Steele",
+        "org": null,
+        "twitter": "__steele"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1631106256072-54c89defe828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/02/03",
+    "references": [
+        "https://awsteele.com/blog/2022/02/03/aws-vpc-data-exfiltration-using-codebuild.html"
+    ],
+    "severity": "Low",
+    "slug": "codebuild-data-exfil",
+    "summary": "When customers attach a CodeBuild project to their VPC, CodeBuild\u2019s build container\nwill apply the same network routing rules as defined in the customer\u2019s VPC Security Group.\nHowever, CodeBuild EC2 hosts retained Internet connectivity via AWS's own VPC, thus allowing\nan attacker to bypass any custom VPC rules the customer had set up, and use CodeBuild for\ndata exfiltration from the targeted environment. AWS later updated the CodeBuild service\nto block all outbound network access for newly created CodeBuild projects which contain a\ncustomer-defined VPC configuration.\n",
+    "title": "Codebuild data exfiltration"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Cognito",
+        "Amazon API Gateway"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/02/15",
+    "discoveredBy": {
+        "domain": "https://www.opsmorph.com/",
+        "name": null,
+        "org": "opsmorph",
+        "twitter": "https://twitter.com/opsmorph"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/02/15",
+    "references": "https://www.opsmorph.com/Blog/usergroupspoofing",
+    "severity": "Low",
+    "slug": "cognito-user-group-spoofing",
+    "summary": "Opsmorph discovered an improper access control vulnerability in authorization logic common in applications built on AWS. The vulnerability means a user \nwith permission to create a new Cognito User Group could fool authorization checks into thinking that the user is in any other existing Cognito User \nGroup in the same User Pool, referred to as user group spoofing. \nWhen API Gateway is secured with a Cognito User Pool Authorizer it concatenates group names from the identity token into a comma separated string, \nand as Cognito also permits commas in the group names, this was an ambiguous representation of the groups a user was in that provided an opportunity \nfor injection type attack. AWS have since fixed the Cognito User Pool Authorizer so that it now escapes special characters when parsing the groups claim\nof the token.\n",
+    "title": "Cognito User Group spoofing"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "EC2"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2018-15869"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2018/08/13",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Megan Marsh",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/owner_launched_machine.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update CLI and other tools that create EC2s\n",
+    "publishedAt": "2018/08/13",
+    "references": [
+        "https://github.com/hashicorp/packer/issues/6584"
+    ],
+    "severity": "Medium",
+    "slug": "cve-2018-15869",
+    "summary": "Attackers had put malicious AMIs in the marketplace to abuse the CLI''s\nway of selecting what AMI to use. Although the concept of planting  malicious\nAMIs had existed for a while (ex. in the 2009 presentation \"Clobbering the clouds\"\nby Nicholas Arvanitis, Marco Slaviero, and Haroon Meer) it had not been used specifically\nto target this issue with the CLI.\n",
+    "title": "Launching EC2s did not require specifying AMI owner"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "App Service"
+    ],
+    "contributor": "https://github.com/r0nen",
+    "cves": [
+        "CVE-2019-1372"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2019/10/08",
+    "discoveredBy": {
+        "domain": "https://research.checkpoint.com/",
+        "name": "Ronen Shustin",
+        "org": "Check Point",
+        "twitter": "https://twitter.com/ronenshh"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/6858611/pexels-photo-6858611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "knownITWExploitation": null,
+    "manualRemediation": "Azure Cloud - None required, \nAzure Stack / Windows Azure Pack Web Sites V2 - Manual update\n",
+    "publishedAt": "2020/01/30",
+    "references": [
+        "https://research.checkpoint.com/2020/remote-cloud-execution-critical-vulnerabilities-in-azure-cloud-infrastructure-part-ii/",
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2019-1372"
+    ],
+    "severity": "Critical",
+    "slug": "CVE-2019-1372",
+    "summary": "A Vulnerability in App Service could allow an unprivileged function run by the user to execute code in the \ncontext of NT AUTHORITY\\system, thereby escaping the sandbox. This vulnerability allowed cross-account access \nwhen using the Free/Shared tier.\n",
+    "title": "Azure App Service RCE"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Azure Container Instance",
+        "Azure Service Fabric",
+        "Azure Kubernetes Service",
+        "Azure Container Registry",
+        "Azure Spring Cloud"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": "CVE-2021-27075",
+    "detectionMethods": null,
+    "disclosedAt": "2021/03/09",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Paul Litvak (Intezer), Wouter ter Maat (Offensi)",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/vm_extensions_creds_leak.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "For Azure Kubernetes Service, update to image version 2020.10.15 or later. For other services, no action is required.\n",
+    "publishedAt": "2021/03/09",
+    "references": [
+        "https://www.intezer.com/blog/cloud-security/cve-2021-27075-microsoft-azure-vulnerability-allows-privilege-escalation-and-leak-of-data/",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27075"
+    ],
+    "severity": "Medium",
+    "slug": "cve-2021-27075",
+    "summary": "A vulnerability in the Azure Linux VM extension mechanism allowed an unprivileged\nuser to leak any Azure VM extension\u2019s private data. An attacker could have abused\nthis to gain credentials for the VM itself as well as credentials for extensions\nassociated with the VM. Paired with the design of the VMAccess extension (an official\nAzure extension for managing VM credentials), this could have been used to achieve\nprivilege escalation, as an unprivileged attacker would have been able to elevate themselves\nto a higher privileged user by leaking the VMAccess admin password. Additionally, if the VMAccess\npassword happened to be shared among other Azure VMs, the attacker would have been able to perform\nlateral movement to other machines. The root cause of this vulnerability was that the\ncertificates endpoint used for decrypting extension credentials did not validate transport\ncertificates, so an attacker could simply issue their own valid transport certificate.\nMoreover, although an iptables rule was in place to prevent unprivileged access to this\nendpoint, an attacker could bypass it by directing their requests to the Azure IMDS instead,\nwhich happened to be located on the same machine as the certificates endpoint.\n",
+    "title": "Azure Linux VM extension credential leak"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Workspaces"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2021-38112"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2021/09/21",
+    "discoveredBy": {
+        "domain": "https://rhinosecuritylabs.com/",
+        "name": "David Yesland",
+        "org": "Rhino Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update client to 3.1.9 or higher\n",
+    "publishedAt": "2021/09/21",
+    "references": [
+        "https://rhinosecuritylabs.com/aws/cve-2021-38112-aws-workspaces-rce/",
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-38112"
+    ],
+    "severity": "High",
+    "slug": "cve-2021-38112",
+    "summary": "If a user with AWS WorkSpaces 3.0.10-3.1.8 installed visits a page in their\nweb browser with attacker controlled content, the attacker can get zero click\nRCE under common circumstances.\n",
+    "title": "AWS Workspace client RCE"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "AAD"
+    ],
+    "contributor": "https://github.com/a10ns",
+    "cves": [
+        "CVE-2021-42306"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2021/10/07",
+    "discoveredBy": {
+        "domain": "https://www.netspi.com/",
+        "name": "Karl Fosaaen",
+        "org": "NetSPI",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/7630510/pexels-photo-7630510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "Regenerate exposed certificate\n",
+    "publishedAt": "2021/11/17",
+    "references": [
+        "https://msrc-blog.microsoft.com/2021/11/17/guidance-for-azure-active-directory-ad-keycredential-property-information-disclosure-in-application-and-service-principal-apis/",
+        "https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-migrate/azure-migrate-credential-rotation-guide.md",
+        "https://www.netspi.com/blog/technical/cloud-penetration-testing/azure-cloud-vulnerability-credmanifest/"
+    ],
+    "severity": "High",
+    "slug": "cve-2021-42306",
+    "summary": "Automation Account 'Run as' credentials (PFX certificates) were being stored\nin cleartext, in Azure Active Directory (AAD). These credentials were available\nto anyone with the ability to read information about App Registrations (typically\nmost AAD users).\n",
+    "title": "CredManifest (Azure AD keyCredential property information disclosure)"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "EKS"
+    ],
+    "contributor": "https://github.com/patricksanders",
+    "cves": [
+        "CVE-2022-2385"
+    ],
+    "detectionMethods": "None - this issue affected the logged identity, and is not discernible from valid requests.",
+    "disclosedAt": "2022/05/25",
+    "discoveredBy": {
+        "domain": "https://www.lightspin.io/",
+        "name": "Gafnit Amiga",
+        "org": "Lightspin",
+        "twitter": "gafnitav"
+    },
+    "exploitabilityPeriod": "Oct 2017 - June 2022",
+    "image": "https://cdn.pixabay.com/photo/2019/09/25/09/50/biometrics-4503187_960_720.jpg",
+    "knownITWExploitation": null,
+    "manualRemediation": "EKS instances have been auto-updated. For self-hosted installations, upgrading aws-iam-authenticator to v0.5.9 fixes this vulnerability.\nAs a workaround, this vulnerability can be mitigated by not using the {{AccessKeyID}} template value to construct usernames. \n",
+    "publishedAt": "2022/07/11",
+    "references": [
+        "https://blog.lightspin.io/exploiting-eks-authentication-vulnerability-in-aws-iam-authenticator",
+        "https://github.com/kubernetes-sigs/aws-iam-authenticator/issues/472",
+        "https://aws.amazon.com/security/security-bulletins/AWS-2022-007/"
+    ],
+    "severity": "high",
+    "slug": "CVE-2022-2385",
+    "summary": "Amazon Elastic Kubernetes Service (EKS) uses IAM to provide authentication to the cluster through the AWS IAM Authenticator for Kubernetes (aws-iam-authenticator).\naws-iam-authenticator can be installed on any Kubernetes cluster, and it is installed by default in any EKS cluster both on AWS cloud and on-premises (Amazon EKS Anywhere).\nA security issue was discovered in aws-iam-authenticator where an allow-listed IAM identity may be able to modify their username and escalate privileges.\nThe bug allowed an attacker to (1) craft a malicious token with any action value, (2) without signing the cluster ID, (3) that would manipulate the AccessKeyID value.\nEssentially, in clusters using aws-iam-authenticator, if an {{AccessKeyID}} was mapped to an IAM user with cluster admin privileges, any non-privileged user could have escalated their privileges to cluster admin.\n",
+    "title": "AWS IAM Authenticator for Kubernetes AccessKeyID Validation Bypass"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "VPN"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2022-25165"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2022/02/15",
+    "discoveredBy": {
+        "domain": "https://rhinosecuritylabs.com/",
+        "name": "David Yesland",
+        "org": "Rhino Security",
+        "twitter": "https://twitter.com/daveysec"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://cdn.pixabay.com/photo/2015/05/16/12/03/escalator-769790_960_720.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update the client to version 3.0.0.\n",
+    "publishedAt": "2022/04/12",
+    "references": [
+        "https://rhinosecuritylabs.com/aws/cve-2022-25165-aws-vpn-client/",
+        "https://aws.amazon.com/security/security-bulletins/AWS-2022-005/"
+    ],
+    "severity": "Low",
+    "slug": "cve-2022-25165",
+    "summary": "The AWS VPN Client application is affected by an arbitrary file write as SYSTEM,\nwhich can lead to privilege escalation and an information disclosure vulnerability\nthat allows the user's Net-NTLMv2 hash to be leaked via a UNC path in a VPN configuration file.\n",
+    "title": "Privilege Escalation to SYSTEM in AWS VPN Client"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Azure Automation",
+        "Azure Diagnostics",
+        "Azure HDInsight",
+        "Azure Stack Hub"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": [
+        "CVE-2022-29149"
+    ],
+    "detectionMethods": "OMI version < 1.6.9.1",
+    "disclosedAt": "2022/06/14",
+    "discoveredBy": {
+        "domain": "https://msrc.microsoft.com/",
+        "name": null,
+        "org": "Microsoft",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://www.datocms-assets.com/75231/1659892020-omigod-8.png",
+    "knownITWExploitation": null,
+    "manualRemediation": "In some cases no manual action is required, but for most Azure services, customers must manually patch the OMI agent.\nSee Microsoft's advisory (linked in references) for further details on how to update in each case.\n",
+    "publishedAt": "2022/06/14",
+    "references": [
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2022-29149"
+    ],
+    "severity": "High",
+    "slug": "cve-2022-29149",
+    "summary": "Azure forces the install of an agent on Linux VMs, which contained a vulnerability that allowed privilege escalation\n(note that this vulnerability is different than OMIGOD, which also resided in the OMI agent).\n",
+    "title": "Azure Open Management Infrastructure (OMI) Elevation of Privilege"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "SSM",
+        "EC2"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": "CVE-2022-29527",
+    "detectionMethods": null,
+    "disclosedAt": "2022/02/28",
+    "discoveredBy": {
+        "domain": "https://www.suse.com/",
+        "name": "Matthias Gerstner",
+        "org": "SUSE",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "until 2022/04/05",
+    "image": "https://images.unsplash.com/photo-1575252663512-b25714ec27f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update the agent to the patched version (3.1.1208)\n",
+    "publishedAt": "2022/04/20",
+    "references": [
+        "https://github.com/advisories/GHSA-87pw-p9qx-p46w",
+        "https://github.com/aws/amazon-ssm-agent/releases/tag/3.1.1208.0",
+        "https://bugzilla.suse.com/show_bug.cgi?id=1196556"
+    ],
+    "severity": "High",
+    "slug": "cve-2022-29527",
+    "summary": "The Amazon SSM Agent (used for managing EC2 instances via Amazon Systems Manager) created a world-writable sudoers file,\nwhich would have allowed local attackers to inject Sudo rules and escalate privileges to root.\nThis could occur in certain situations involving a race condition.\n",
+    "title": "AWS SSM agent local privilege escalation"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Service Fabric"
+    ],
+    "contributor": "https://github.com/leszekgrzegorek",
+    "cves": [
+        "cve-2022-30137"
+    ],
+    "detectionMethods": "Linux Service Fabric runtime < 9.0.1035.1",
+    "disclosedAt": "2022/06/14",
+    "discoveredBy": {
+        "domain": "https://unit42.paloaltonetworks.com",
+        "name": "Aviv Sasson",
+        "org": "Palo Alto Networks",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "until 2022/05/24",
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/fabricscape.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Users can check their current Service Fabric version by navigating to their Service Fabric\ncluster in the Azure console and then clicking on \"Fabric upgrades\".\nIf the Fabric upgrade mode is configured to \"Automatic\", the cluster will be updated automatically\nto the latest secure version. If Fabric upgrade mode is configured to \"Manual\",\ncustomers must update it manually to the latest version (9.0.1035.1 or higher).\n",
+    "publishedAt": "2022/06/28",
+    "references": [
+        "https://unit42.paloaltonetworks.com/fabricscape-cve-2022-30137/",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-30137",
+        "https://msrc-blog.microsoft.com/2022/06/28/azure-service-fabric-privilege-escalation-from-containerized-workloads-on-linux/"
+    ],
+    "severity": "Medium",
+    "slug": "CVE-2022-30137",
+    "summary": "A vulnerability in Service Fabric allows Linux containers to escalate their privileges in\norder to gain root privileges on the node, and then compromise all of the nodes in the cluster.\nAn attacker would need to have read/write access to the cluster, and the vulnerability could be\nexploited on containers that are configured to have runtime access, but this is granted by default\nto every container. Though the bug exists in both the Windows and Linux versions, it is only\nexploitable on Linux.\n",
+    "title": "FabricScape (CVE-2022-30137) - Azure Service Fabric privilege escalation"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Azure Site Recovery"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": "CVE-2022-33675",
+    "detectionMethods": null,
+    "disclosedAt": "2022/04/08",
+    "discoveredBy": {
+        "domain": "https://www.tenable.com",
+        "name": "James Sebree",
+        "org": "Tenable",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/azure-site-dll-hijacking.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/07/12",
+    "references": [
+        "https://medium.com/tenable-techblog/microsoft-azure-site-recovery-dll-hijacking-cd8cc34ef80c",
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2022-33675",
+        "https://www.tenable.com/security/research/tra-2022-26",
+        "https://msrc-blog.microsoft.com/2022/07/12/microsoft-mitigates-azure-site-recovery-vulnerabilities/"
+    ],
+    "severity": "Low",
+    "slug": "cve-2022-33675",
+    "summary": "The Microsoft Azure Site Recovery suite contained a DLL hijacking flaw that allowed for\nprivilege escalation from any low privileged user to SYSTEM on hosts where this service was installed.\nIncorrect permissions on the cxprocessserver service's executable directory allowed new files to be\ncreated in it by any user. Since the service ran automatically and with SYSTEM privileges and attempted\nto load DLLs from the directory, this allowed for a DLL hijacking / planting attack.\n",
+    "title": "Microsoft Azure Site Recovery DLL hijacking"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "Dataflow"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/03/05",
+    "discoveredBy": {
+        "domain": "https://mbrancato.github.io/",
+        "name": "Mike Brancato",
+        "org": null,
+        "twitter": "meatballninja"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dataflow-rce-jmx.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/12/28",
+    "references": [
+        "https://mbrancato.github.io/2021/12/28/rce-dataflow.html",
+        "https://portswigger.net/daily-swig/google-showers-top-cloud-security-researchers-with-kudos-and-cash"
+    ],
+    "severity": "Low",
+    "slug": "dataflow-rce-jmx",
+    "summary": "Dataflow worker nodes ran an unauthenticated Java Management Extensions (JMX) service that under\ncertain circumstances would be exposed to the Internet, thus allowing unauthenticated remote code\nexecution (RCE) as root in an unprivileged container. The impact of the vulnerability depended on\nwhich service account qA assigned to Dataflow worker nodes (by default, that would be the Google\nCompute Engine default service account, which has the project-wide Editor role assigned).\n",
+    "title": "Dataflow RCE via unauthenticated JMX service"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "CodeArtifact"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/10/29",
+    "discoveredBy": {
+        "domain": "https://medium.com/@ignacio.dominguez",
+        "name": "Ignacio Dominguez",
+        "org": "Zego",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dependency_confusion_in_AWS_CodeArtifact.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/07/14",
+    "references": [
+        "https://zego.engineering/dependency-confusion-in-aws-codeartifact-86b9ff68963d",
+        "https://aws.amazon.com/blogs/devops/tighten-your-package-security-with-codeartifact-package-origin-control-toolkit/",
+        "https://docs.aws.amazon.com/codeartifact/latest/ug/package-origin-controls.html"
+    ],
+    "severity": "Medium",
+    "slug": "dependency-confusion-in-aws-codeartifact",
+    "summary": "AWS CodeArtifact was susceptible to dependency confusion / substitution (i.e, publication of a\nmalicious package to a public repository with the same name as an organization\u2019s internal package).\nAWS fixed this issue by adding package origin controls, allowing users to limit how versions of a\ngiven package can be added to a CodeArtifact repository.\n",
+    "title": "Dependency confusion in AWS CodeArtifact"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/26",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Imre Rad",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/dhcp-abuse-code-exec.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/06/25",
+    "references": [
+        "https://github.com/irsl/gcp-dhcp-takeover-code-exec"
+    ],
+    "severity": "Medium",
+    "slug": "dhcp-abuse-code-exec",
+    "summary": "Under certain conditions, an attacker can flood DHCP packets to the victim\nVM, allowing it to impersonate the Metadata server, and grant themselves SSH access.\n",
+    "title": "DHCP abuse for code exec"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "EC2"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/07/01",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Johann Rehberger",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/script_elastic_compute_console.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/07/01",
+    "references": [
+        "https://embracethered.com/blog/posts/2020/aws-xss-cross-site-scripting-vulnerability/"
+    ],
+    "severity": "Low",
+    "slug": "ec2-console-xss",
+    "summary": "Display of EC2 tags had XSS\n",
+    "title": "XSS on EC2 web console"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "ELB"
+    ],
+    "contributor": "https://github.com/mhgeay",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/01/24",
+    "discoveredBy": {
+        "domain": "https://brave.com/",
+        "name": "Andrea Brancaleoni",
+        "org": "Brave",
+        "twitter": "https://twitter.com/nJoyneer"
+    },
+    "exploitabilityPeriod": "Fixed on 2022/01/29",
+    "image": "https://pbs.twimg.com/media/FS-NXYeWYAI4B3t?format=jpg&name=medium",
+    "knownITWExploitation": false,
+    "manualRemediation": null,
+    "publishedAt": "2022/05/17",
+    "references": [
+        "https://twitter.com/nJoyneer/status/1526593840928411650",
+        "https://raw.globalsecuritydatabase.org/GSD-2022-1002524"
+    ],
+    "severity": "medium",
+    "slug": "elb-cache-http-smuggling",
+    "summary": "While testing rate-limiter protection, The researcher noticed that when forcing HTTP/1 requests and injecting \na space after `X-Forwarded-For` he was able to override this specific header, letting him impersonate any IP.\nAny internal header could have beem overridden, also the one that should not be exposed/forwarded by the\nclient, such as `CloudFront-Viewer-Country-Region` or any other `CloudFront` enhanced header. \nThis special security issue was affecting all AWS users with that a specific setting enabled.\n",
+    "title": "ELB Cache mechanism HTTP header smuggling"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "WorkSpaces"
+    ],
+    "contributor": "https://github.com/kasif-dekel",
+    "cves": [
+        "CVE-2021-42972",
+        "CVE-2021-42973",
+        "CVE-2021-42976",
+        "CVE-2021-42977",
+        "CVE-2021-42979",
+        "CVE-2021-42980",
+        "CVE-2021-42983",
+        "CVE-2021-42986",
+        "CVE-2021-42987",
+        "CVE-2021-42988",
+        "CVE-2021-42990",
+        "CVE-2021-42993",
+        "CVE-2021-42994",
+        "CVE-2021-42996",
+        "CVE-2021-43000",
+        "CVE-2021-43002",
+        "CVE-2021-43003",
+        "CVE-2021-43006",
+        "CVE-2021-43637",
+        "CVE-2021-43638",
+        "CVE-2021-42681",
+        "CVE-2021-42682",
+        "CVE-2021-42683",
+        "CVE-2021-42685",
+        "CVE-2021-42686",
+        "CVE-2021-42687",
+        "CVE-2021-42688"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2021/05/02",
+    "discoveredBy": {
+        "domain": "https://www.sentinelone.com/",
+        "name": "Kasif Dekel",
+        "org": "SentinelOne",
+        "twitter": "https://twitter.com/kasifdekel"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/57007/pexels-photo-57007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": null,
+    "manualRemediation": "AWS Workspaces users must manually update if they have either AutoStop WorkSpaces\nwith maintenance disabled or AlwaysOn WorkSpaces with OS updates disabled.\n",
+    "publishedAt": "2021/12/07",
+    "references": "https://www.sentinelone.com/labs/usb-over-ethernet-multiple-privilege-escalation-vulnerabilities-in-aws-and-other-major-cloud-services/",
+    "severity": "High",
+    "slug": "eltima-cloud-desktop-lpe",
+    "summary": "Several cloud desktop solutions rely on a 3rd-party library called Eltima SDK to provide\nUSB over Ethernet capabilities, to allow users to connect and share local devices such as\nwebcams. SentinelLabs discovered vulnerabilities in Eltima drivers, including proprietary\nversions used by several cloud services (among them AWS Workspaces), that would allow\nunprivileged users to escalate privileges to kernel mode.\n",
+    "title": "LPE vulnerability in Eltima (3rd-party cloud desktop driver)"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "KMS"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/28",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Thai Duong (thaidn)",
+        "org": "Google",
+        "twitter": "XorNinja"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/encryption_software_development_kit.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update the SDK to the latest secure version.\n",
+    "publishedAt": "2020/09/28",
+    "references": [
+        "https://twitter.com/XorNinja/status/1310587707605659649",
+        "https://vnhacker.blogspot.com/2020/09/advisory-security-issues-in-aws-kms-and.html"
+    ],
+    "severity": "Low",
+    "slug": "encryption-sdk-issues",
+    "summary": "AWS KMS and all versions of AWS Encryption SDKs prior to version 2.0.0 were susceptible to\ninformation leakage (an attacker could create ciphertexts that would leak the user\u2019s AWS account ID,\nencryption context, user agent, and IP address upon decryption), ciphertext forgery (an attacker could\ncreate ciphertexts that were accepted by other users) and lack of robustness (an attacker could create\nciphertexts that decrypt to different plaintexts for different users).\n",
+    "title": "Encryption SDK vulnerabilities"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Database for PostgreSQL"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/01/11",
+    "discoveredBy": {
+        "domain": "https://www.wiz.io/",
+        "name": "Sagi Tzadik, Nir Ohfeld, Shir Tamari, Ronen Shustin",
+        "org": "Wiz",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://www.datocms-assets.com/75231/1659934983-new-replica.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/04/28",
+    "references": [
+        "https://www.wiz.io/blog/wiz-research-discovers-extrareplica-cross-account-database-vulnerability-in-azure-postgresql/",
+        "https://www.wiz.io/blog/the-cloud-has-an-isolation-problem-postgresql-vulnerabilities",
+        "https://msrc-blog.microsoft.com/2022/04/28/azure-database-for-postgresql-flexible-server-privilege-escalation-and-remote-code-execution"
+    ],
+    "severity": "Critical",
+    "slug": "extrareplica",
+    "summary": "A chain of critical vulnerabilities was discovered in Azure Database for PostgreSQL Flexible Server,\nallowing unauthorized read access to other customers\u2019 PostgreSQL databases, thus bypassing tenant isolation.\nIf exploited, a malicious actor could have replicated and gained read access to Azure PostgreSQL Flexible Server customer databases.\n",
+    "title": "ExtraReplica"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "Cloud Armor"
+    ],
+    "contributor": "https://github.com/riyazwalikar",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/02/24",
+    "discoveredBy": {
+        "domain": "https://kloudle.com/",
+        "name": "Karan Saini, Riyaz Walikar",
+        "org": "Kloudle",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "Ongoing",
+    "image": "https://images.pexels.com/photos/350784/pexels-photo-350784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "A custom rule can be added in Advanced mode - `int(request.headers[\"content-length\"]) >= 8192`,\nwith 502, 403, or 404 HTTP response status in return.\n",
+    "publishedAt": "2022/02/24",
+    "references": [
+        "https://kloudle.com/blog/piercing-the-cloud-armor-the-8kb-bypass-in-google-cloud-platform-waf",
+        "https://kloudle.com/academy/a-guide-to-protect-against-the-8kb-waf-limitation-in-google-cloud-armor"
+    ],
+    "severity": "Medium",
+    "slug": "gcp-8kb-bypass",
+    "summary": "Cloud Armor has a documented limitation of 8 KB as the maximum size of web\nrequest that it will inspect. The default behavior of Cloud Armor in this case can allow\noversized malicious requests to bypass Cloud Armor and directly reach an underlying application.\nMoreover, Cloud Armor does not warn users of this limitation during policy creation\nor when configuring rules from within the web UI, and can only find a reference to\nthe 8 KB limit in the [Cloud Armor documentation](https://cloud.google.com/armor/docs/security-policy-overview).\n",
+    "title": "Google Cloud Armor packet size bypass"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "Cloudshell"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/12/16",
+    "discoveredBy": {
+        "domain": "https://offensi.com/",
+        "name": "Wouter ter Maat",
+        "org": "Offensi",
+        "twitter": "https://twitter.com/wtm_offensi"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://cdn.pixabay.com/photo/2020/11/07/15/31/hermit-crab-shell-5721572_1280.jpg",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2019/12/16",
+    "references": [
+        "https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-introduction/",
+        "https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-1/",
+        "https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-2/",
+        "https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-3/",
+        "https://offensi.com/2019/12/16/4-google-cloud-shell-bugs-explained-bug-4/",
+        "https://www.youtube.com/watch?v=J2icGMocQds",
+        "https://security.googleblog.com/2020/03/announcing-our-first-gcp-vrp-prize.html"
+    ],
+    "severity": "Medium",
+    "slug": "gcp-cloudshell-bugs",
+    "summary": "Wouter ter Maat discovered 9 vulnerabilities in GCP Cloudshell that could\nallow an attacker to access resources in another customer's environment. \n",
+    "title": "GCP Cloudshell Vulnerabilities"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/louisdurufle",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": null,
+    "discoveredBy": null,
+    "exploitabilityPeriod": "Since the creation of GCP",
+    "image": "https://assets.website-files.com/6207f5adfd8e615d3d70498b/6239e2f458c48918ab0602dd_GCP%20-%20comp%20blue.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "Remove these permissions, it can be done via an organization policy\n",
+    "publishedAt": "2020/11/22",
+    "references": [
+        "https://cloud.google.com/resource-manager/docs/organization-policy/restricting-service-accounts#disable_service_account_default_grants"
+    ],
+    "severity": "Medium",
+    "slug": "gcp-default-compute-account",
+    "summary": "When the compute API is enabled on a GCP Project, the default compute account\nis created. This account gets the primitive role Editor assigned by default, which\nallows for a wide variety of privilege excalation and resource abuse in the project.\nEspecially, all new VMs created inherit this permissions by default. This issue\nis arguably a technical decision by GCP, but the documents advise customers to\nundo this.\n",
+    "title": "GCP Default compute account is project Editor"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "Composer",
+        "Dataflow",
+        "Dataproc",
+        "Dataprep",
+        "Data Fusion"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/06/03",
+    "discoveredBy": {
+        "domain": "https://security.love/",
+        "name": "Allison Donovan, Dylan Ayrey",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": "Ongoing, partially fixed on June 2020",
+    "image": "https://cdn.pixabay.com/photo/2019/08/20/07/55/escalator-4418051_1280.jpg",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/11/22",
+    "references": [
+        "https://security.love/blog/gcp/2020/11/22/lateral-movement-and-privesc-in-GCP.html"
+    ],
+    "severity": "High",
+    "slug": "gcp-iam-pe-multiple-services",
+    "summary": "Composer, Dataflow, Dataproc, Dataprep and Data Fusion all used the Compute Engine\ndefault service account by default and relied on product-level IAM permissions\nwithout requiring the iam.serviceAccount.actAs permission, meaning that users of\nthese services could elevate their privileges. Following disclosure, GCP changed\nthese services to require this permission.\n",
+    "title": "IAM privilege escalation in multiple GCP services"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/09/17",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Unknown",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/identity_aware_proxy.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/09/17",
+    "references": [
+        "https://cloud.google.com/support/bulletins#gcp-2021-020"
+    ],
+    "severity": "Medium",
+    "slug": "gcp-iap-bypass",
+    "summary": "Convincing a victim to click a specially crafted link would allow the attacker\nto bypass the Identity-Aware Proxy (a core component of BeyondCorp).\n",
+    "title": "GCP IAP bypass"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/05/15",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Kat Traxler",
+        "org": null,
+        "twitter": "NightmareJS"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/organization_bypass.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/09/10",
+    "references": [
+        "https://kattraxler.github.io/gcp/hacking/2021/09/10/gcp-org-policy-bypass-ai-notebooks.html"
+    ],
+    "severity": "Medium",
+    "slug": "gcp-org-policies-bypass",
+    "summary": "Allows an attacker with privileges in the account to share resources outside\nof the account even when an org policy restricts this, thus enabling them to backdoor\ntheir access.\n",
+    "title": "Org policies bypass"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/10/12",
+    "discoveredBy": {
+        "domain": "https://trustoncloud.com/",
+        "name": "Jonathan Rault",
+        "org": "TrustOnCloud",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/exfiltrating_data_via_policy_logs.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Review denied logs in the defender project, because it was also logged there.\n",
+    "publishedAt": "2021/09/22",
+    "references": [
+        "https://trustoncloud.com/exfiltrate-data-from-your-super-secure-google-cloud-project-using-the-security-control-built-to-prevent-it/"
+    ],
+    "severity": "Low",
+    "slug": "gcp-org-policy-exfiltrate-data",
+    "summary": "Upon blocking a request, GCP Org policy constraints were logging the deny\nlogs in Principal''s project and the blocking project. An attacker could use those\nlogs to exfiltrate any data, by making request from a Principal they own from\na defender project.\n",
+    "title": "Exfiltrate data via the logs of GCP Org policy"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "OS Login"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2020-8933",
+        "CVE-2020-8907",
+        "CVE-2020-8903"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2020/06/04",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Chris Moberly",
+        "org": null,
+        "twitter": "init_string"
+    },
+    "exploitabilityPeriod": "until June 2020",
+    "image": "https://images.pexels.com/photos/7979076/pexels-photo-7979076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "knownITWExploitation": null,
+    "manualRemediation": "",
+    "publishedAt": "2021/03/17",
+    "references": [
+        "https://gitlab.com/gitlab-com/gl-security/threatmanagement/redteam/redteam-public/red-team-tech-notes/-/tree/master/oslogin-privesc-june-2020"
+    ],
+    "severity": "Medium",
+    "slug": "gcp-os-login-pe",
+    "summary": "GCP provides an OS Login service for managing SSH access to compute instances using IAM roles.\nAn attacker could abuse this feature via LXD, Docker (if available on the target system) and\nDHCP poisoning of the metadata server to escalate their privileges on a Google Compute Engine VM.\n",
+    "title": "Privilege escalation in GCP OS Login"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": "Autopilot",
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/06/01",
+    "discoveredBy": {
+        "domain": "https://unit42.paloaltonetworks.com/",
+        "name": "Yuval Avrahami",
+        "org": "Palo Alto",
+        "twitter": "https://twitter.com/yuvalavra"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://www.svgrepo.com/show/376321/google-gke.svg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/03/08",
+    "references": "https://unit42.paloaltonetworks.com/gke-autopilot-vulnerabilities/",
+    "severity": "Medium",
+    "slug": "gke-autopilot-allowlist",
+    "summary": "Unit 42 researchers disclosed several vulnerabilities and attack techniques in GKE Autopilot to Google, the root cause being insufficient verification of allowlisted workload image names. \nAn attacker with permissions to create a pod could have abused these vulnerabilities to (1) escape their pod and compromise the underlying node, (2) escalate privileges and become full cluster administrators, \nand (3) covertly persist administrative access through backdoors that are completely invisible to cluster operators.\n",
+    "title": "Autopilot node compromise via allowlisted workload masquerade"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "GKE"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/12/30",
+    "discoveredBy": {
+        "domain": "https://www.koyeb.com/",
+        "name": "Bastien Chatelard",
+        "org": "Koyeb",
+        "twitter": "https://twitter.com/bchatelard"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://cdn.pixabay.com/photo/2016/08/10/14/07/sandbox-1583289_1280.jpg",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/12/30",
+    "references": [
+        "https://www.koyeb.com/blog/escaping-gke-gvisor-sandboxing-using-metadata"
+    ],
+    "severity": "Medium",
+    "slug": "gke-gvisor-sandbox-escape",
+    "summary": "A bug in the GKE gVisor sandbox's network policy implementation allowed access to the Google Compute Engine metadata API.\n",
+    "title": "GKE gVisor sandbox escape"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "GuardDuty"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/04/23",
+    "discoveredBy": {
+        "domain": "https://rhinosecuritylabs.com/",
+        "name": "Spencer Gietzen",
+        "org": "Rhino Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/guard_duty_detection_bypass.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "As a safety measure, set up additional detections independent of GuardDuty.\n",
+    "publishedAt": "2020/04/23",
+    "references": [
+        "https://github.com/RhinoSecurityLabs/Cloud-Security-Research/tree/master/AWS/cloudtrail_guardduty_bypass",
+        "https://twitter.com/0xdabbad00/status/1258909131605307393"
+    ],
+    "severity": "Low",
+    "slug": "guardduty-cloudtrail-bypass",
+    "summary": "GuardDuty detected CloudTrail being outright disabled, but did not detect if an attacker with the\nnecessary permissions filtered out all events from CloudTrail via PutEventSelectors, resulting in\ndefenders having no logs to review. AWS fixed this issue by adding a GuardDuty detection that\ntriggers if PutEventSelectors is used to disable all event types.\n",
+    "title": "GuardDuty detection bypass via cloudtrail"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/Rami_McCarthy",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/10/15",
+    "discoveredBy": null,
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/policy_changed_in_unexpected_and_insecure_ways.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/10/15",
+    "references": [
+        "https://twitter.com/__steele/status/1316909785607012352"
+    ],
+    "severity": "Low",
+    "slug": "iam-managed-policies-lack-controls",
+    "summary": "AWS have released or changed managed IAM policies in unexpected and insecure ways.\nExamples include: CheesepuffsServiceRolePolicy, AWSServiceRoleForThorInternalDevPolicy,\nAWSCodeArtifactReadOnlyAccess.json, AmazonCirrusGammaRoleForInstaller. The worst\nbeing the ReadOnlyAccess policy having almost all privileges removed and unexpected\nones added.\n",
+    "title": "Lack of internal change controls for IAM managed policies"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2017/11/07",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Multiple findings",
+        "org": null,
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/bypassing_policies_and_overly_privileged.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Review the policies provided by AWS\n",
+    "publishedAt": "2017/11/07",
+    "references": [
+        "https://duo.com/blog/potential-gaps-in-suggested-amazon-web-services-security-policies-for-mfa",
+        "https://summitroute.com/blog/2019/06/18/aws-iam-managed-policy-review/",
+        "https://medium.com/ymedialabs-innovation/an-aws-managed-policy-that-allowed-granting-root-admin-access-to-any-role-51b409ea7ff0",
+        "https://www.tenchisecurity.com/blog/thefaultinourstars"
+    ],
+    "severity": "Medium",
+    "slug": "iam-policies-bypass-overprivileged",
+    "summary": "AWS has previously provided managed policies or guidance in documentation\nfor policies with mistakes that allow them to be bypassed. Additionally,\nsome policies are over-privileged. Date of disclosure is for the first issue of\nthis type, while references provide other examples by various individuals.\n",
+    "title": "Bypassable and overly-privileged IAM policies"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Lake Formation"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/08/15",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ian Mckay",
+        "org": null,
+        "twitter": "iann0036"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/lake_admin_override.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2019/08/15",
+    "references": [
+        "https://twitter.com/iann0036/status/1161871038336028672",
+        "https://pastebin.com/jfPtSp3a"
+    ],
+    "severity": "High",
+    "slug": "lake_admin_override",
+    "summary": "Shortly after Lake Formation was made generally available, a bug was discovered\nthat gave anyone the ability to view and override data lake admins for any account\n(an attacker would have only needed to know the target account number in advance).\nThe root cause was in the Catalog ID, which references the Glue metadata store that\nLake Formation uses to store its configuration - none of the methods that used this\nfield actually checked for permissions on the account it was accessing, only the\nsource account. Moreover, CloudTrail was only writing the log to the source account,\nso anyone auditing the destination account would not have been able to observe any\nsuspicious activity. Following disclosure, AWS fixed the bug.\n",
+    "title": "Lake Formation data lake admin override"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Lambda",
+        "CloudWatch Synthetics"
+    ],
+    "contributor": "https://github.com/ramimac",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/15",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ian Mckay",
+        "org": null,
+        "twitter": "iann0036"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://onecloudplease.com/images/posts/canary.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/09/15",
+    "references": [
+        "https://onecloudplease.com/blog/security-september-racing-against-cloudwatch-synthetics-canaries"
+    ],
+    "severity": "Low",
+    "slug": "lambda-cloudwatch-timing-attack",
+    "summary": "The immutability of Lambda versions could be violated via a timing attack\nagainst CloudWatch Synthetics canaries.\n",
+    "title": "Timing attack with Lambda and CloudWatch Synthetics"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Lightsail"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/08/05",
+    "discoveredBy": {
+        "domain": "https://summitroute.com/",
+        "name": "Scott Piper",
+        "org": "Summit Route",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/3067516/pexels-photo-3067516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "Roll access keys\n",
+    "publishedAt": "2021/08/05",
+    "references": [
+        "https://summitroute.com/blog/2021/08/05/lightsail-object-storage-concerns-part-1/"
+    ],
+    "severity": "Medium",
+    "slug": "lightsail-keys-logged",
+    "summary": "Lightsail object storage allows the creation of access keys which were\nlogged to CloudTrail (both access key and secret key)\n",
+    "title": "Lightsail object storage access keys logged"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Log Analytics"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/10/15",
+    "discoveredBy": {
+        "domain": "https://www.netspi.com/",
+        "name": "Karl Fosaaen",
+        "org": "NetSPI",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/761535/pexels-photo-761535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/09/13",
+    "references": [
+        "https://www.netspi.com/blog/technical/cloud-penetration-testing/escalating-azure-privileges-with-the-log-analystics-contributor-role/"
+    ],
+    "severity": "Medium",
+    "slug": "log-analytics-role-privesc",
+    "summary": "Azure AD users could escalate their privileges using the Log Analytics\nContributor role to reach the full Subscription Contributor role.\n",
+    "title": "Azure privilege escalation via Log Analytics role"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2021-3100",
+        "CVE-2021-3101",
+        "CVE-2022-0070",
+        "CVE-2022-0071"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/14",
+    "discoveredBy": {
+        "domain": "https://www.paloaltonetworks.com/",
+        "name": "Yuval Avrahami",
+        "org": "Palo Alto",
+        "twitter": "https://twitter.com/yuvalavra"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/4518638/pexels-photo-4518638.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/04/19",
+    "references": [
+        "https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/",
+        "https://aws.amazon.com/security/security-bulletins/AWS-2022-006/"
+    ],
+    "severity": "High",
+    "slug": "log4shell-hotpatch",
+    "summary": "AWS's hotpatches for Log4shell worked as intended but introduced new container escape vulnerabilities.\n",
+    "title": "Log4Shell Hot Patch Vulnerable to Container Escape and Privilege Escalation"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "MWAA"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/05/11",
+    "discoveredBy": {
+        "domain": "https://www.vibes.com/",
+        "name": "Ben Reser",
+        "org": "Vibes",
+        "twitter": "https://twitter.com/BenReser"
+    },
+    "exploitabilityPeriod": "by 2022/05/22",
+    "image": "https://images.pexels.com/photos/675987/machine-mill-industry-steam-675987.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/05/31",
+    "references": [
+        "https://twitter.com/BenReser/status/1531710736719695872"
+    ],
+    "severity": "Low",
+    "slug": "mwaa-leaky-logs",
+    "summary": "Two API calls used by Amazon Managed Workflows for Apache Airflow (MWAA)\nto convert AWS IAM credentials into tokens that can be used to login to Airflow\n(CreateCliToken and CreateWebLoginToken) were logging the tokens to Cloudtrail.\nThe event included the hostname for the airflow server, so everything required\nto login to Airflow was in the event. However, the issue was largely mitigated\nby the fact that the tokens are only valid for 60 seconds and CloudTrail delivers\nlogs on average about every 15 minutes, so the chance of receiving a valid token\nwere low.\n",
+    "title": "MWAA logs leak tokens and hostnames"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/21",
+    "discoveredBy": {
+        "domain": "https://www.wiz.io/",
+        "name": "Shir Tamari",
+        "org": "Wiz",
+        "twitter": "https://twitter.com/shirtamari"
+    },
+    "exploitabilityPeriod": "Sept 2017 - Dec 2021",
+    "image": "https://www.datocms-assets.com/75231/1659931538-notlegit-post-by-wiz.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "Remove these permissions - this can be done via an organization policy.\n",
+    "publishedAt": "2021/10/07",
+    "references": [
+        "https://www.wiz.io/blog/azure-app-service-source-code-leak/"
+    ],
+    "severity": "High",
+    "slug": "notlegit",
+    "summary": "Azure App Service had an insecure default behavior that exposed the source code of customer applications\nwritten in PHP, Python, Ruby, or Node, that were deployed using \u201cLocal Git\u201d.\n",
+    "title": "Azure NotLegit"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "OMI"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2021-38647",
+        "CVE-2021-38648",
+        "CVE-2021-38645",
+        "CVE-2021-38649"
+    ],
+    "detectionMethods": "OMI version < 1.6.8.1",
+    "disclosedAt": "2021/09/14",
+    "discoveredBy": {
+        "domain": "https://www.wiz.io/",
+        "name": "Nir Ohfeld",
+        "org": "Wiz",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://www.datocms-assets.com/75231/1659892020-omigod-8.png",
+    "knownITWExploitation": true,
+    "manualRemediation": "None required, client needed to be auto-updated.\n",
+    "publishedAt": "2021/06/01",
+    "references": [
+        "https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution"
+    ],
+    "severity": "Critical",
+    "slug": "omigod",
+    "summary": "Azure forces the install of an agent on Linux VMs, which contained a vulnerability\nthat would grant root RCE if an attacker could send a web request to them. Initially,\nMicrosoft did not update the agent automatically, and so customers had to patch manually,\nbut a few days later they began patching some services remotely.\n",
+    "title": "OMIGOD"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/z0ph",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/21",
+    "discoveredBy": {
+        "domain": "https://summitroute.com/",
+        "name": "Scott Piper",
+        "org": "Summit Route",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/5697262/pexels-photo-5697262.jpeg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required, though best practice would be to use KMS-CMK for bucket\nencryption and minimize privileges in resource policies.\n",
+    "publishedAt": "2021/12/22",
+    "references": [
+        "https://aws.amazon.com/security/security-bulletins/AWS-2021-007/",
+        "https://twitter.com/0xdabbad00/status/1473448889948598275"
+    ],
+    "severity": "Medium",
+    "slug": "overprivileged-aws-support-iam",
+    "summary": "AWS added an excessive s3:getObject permission to AWSSupportServiceRolePolicy\nIAM policy used by AWS Support teams, and removed it a day later.\n",
+    "title": "Overprivileged AWS support IAM role policy"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "CloudTrail"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/02",
+    "discoveredBy": {
+        "domain": "https://frichetten.com/",
+        "name": "Nick Frichette",
+        "org": null,
+        "twitter": "Frichette_n"
+    },
+    "exploitabilityPeriod": "until 2021/05/18",
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/going_through_permissions.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/10/17",
+    "references": [
+        "https://frichetten.com/blog/aws-api-enum-vuln/",
+        "https://github.com/Frichetten/aws-stealth-perm-enum"
+    ],
+    "severity": "Low",
+    "slug": "privilege-identification-cloudtrail",
+    "summary": "An attacker who gained access to IAM credentials could enumerate a subset of the privileges they had access to without logging to CloudTrail. This would allow them to perform the typically noisy permission enumeration process undetected.\n",
+    "title": "Enumeration of Privileges Without Being Logged to CloudTrail"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "Cloud Deployment Manager"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/05/07",
+    "discoveredBy": {
+        "domain": "https://www.ezequiel.tech/",
+        "name": "Ezequiel Pereira",
+        "org": null,
+        "twitter": "https://twitter.com/epereiralopez"
+    },
+    "exploitabilityPeriod": "until 2020/05/20",
+    "image": "https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
+    "knownITWExploitation": null,
+    "manualRemediation": "",
+    "publishedAt": "2020/05/21",
+    "references": [
+        "https://www.ezequiel.tech/2020/05/rce-in-cloud-dm.html"
+    ],
+    "severity": "High",
+    "slug": "rce-in-cloud-dm",
+    "summary": "An RCE in Google Cloud Deployment Manager could have allowed an attacker to make\nrequests to internal Google services, authenticated as a privileged service account.\n",
+    "title": "RCE in Google Cloud Deployment Manager"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/a10ns",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2018/11/28",
+    "discoveredBy": {
+        "domain": "https://www.bridgewater.com/",
+        "name": "Dan Peebles",
+        "org": "Bridgewater",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "until February 2021",
+    "image": "https://cdn.pixabay.com/photo/2021/09/24/11/29/cowboy-6652332_960_720.png",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update existing vulnerable IAM policies by adding scoping condition.\n",
+    "publishedAt": "2018/11/28",
+    "references": [
+        "https://www.youtube.com/watch?v=F3JmBhTQmyY&t=2475s",
+        "https://summitroute.com/blog/2019/04/03/advanced_aws_policy_auditing_confused_deputies_with_aws_services/",
+        "https://www.wiz.io/blog/black-hat-2021-aws-cross-account-vulnerabilities-how-isolated-is-your-cloud-environment"
+    ],
+    "severity": "Low",
+    "slug": "resource-policy-confused-deputy",
+    "summary": "Resource policies lacked a way of restricting service access to only your\nown account, allowing an attacker to leverage a service to potentially access\nyour resources. Originally discovered by Dan Peebles and presented at re:Invent\nin 2018, this issue did not gain enough attention to be fixed until Shir Tamari\nand Ami Luttwak from Wiz presented it at Black Hat 2021.\n",
+    "title": "Resource policy confused deputy issue with services"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "S3"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/09/28",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ian Mckay",
+        "org": null,
+        "twitter": "iann0036"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1590106361237-f75de58c98ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/09/28",
+    "references": [
+        "https://onecloudplease.com/blog/security-september-still-early-days-for-abac"
+    ],
+    "severity": "Low",
+    "slug": "s3-bucket-tagging-not-restricted",
+    "summary": "Lack of the privilege s3:PutBucketTagging did not restrict the ability\nto tag S3 buckets.\n",
+    "title": "S3 bucket tagging not restricted"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "S3"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2020-8912",
+        "CVE-2020-8911"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2020/07/01",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Sophie Schmieg",
+        "org": "Google",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.pexels.com/photos/160773/sandbox-children-child-sand-160773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "knownITWExploitation": false,
+    "manualRemediation": "Update SDK\n",
+    "publishedAt": "2020/08/10",
+    "references": [
+        "https://twitter.com/SchmiegSophie/status/1292930639772004352",
+        "https://github.com/google/security-research/security/advisories/GHSA-76wf-9vgp-pj7w",
+        "https://github.com/google/security-research/security/advisories/GHSA-f5pg-7wfw-84q9",
+        "https://github.com/google/security-research/security/advisories/GHSA-7f33-f4f5-xwgw",
+        "https://aws.amazon.com/blogs/developer/updates-to-the-amazon-s3-encryption-client/"
+    ],
+    "severity": "Low",
+    "slug": "s3-crypto-sdk",
+    "summary": null,
+    "title": "S3 Crypto SDK vulnerabilities"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "S3"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": null,
+    "detectionMethods": "Monitor for changes to Replication rules (e.g., via the S3BucketChangesAlarm alert in CloudWatch) and note any suspicious destinations.\n",
+    "disclosedAt": "2021/10/19",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Kat Traxler",
+        "org": null,
+        "twitter": "NightmareJS"
+    },
+    "exploitabilityPeriod": "ongoing",
+    "image": "https://images.unsplash.com/photo-1515325915697-9279b4f7effc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None\n",
+    "publishedAt": "2022/07/20",
+    "references": [
+        "https://www.vectra.ai/blogpost/abusing-the-replicator-silently-exfiltrating-data-with-the-aws-s3-replication-service",
+        "https://www.youtube.com/watch?v=9lvLboXE9tw"
+    ],
+    "severity": "Low",
+    "slug": "s3-replicator-cloudtrail",
+    "summary": "If a malicious actor with prior access to an AWS environment has permission to modify the S3\nReplication Service role access policy, they could abuse cross-account replication to exfiltrate\nstolen data to an external bucket under their control. Moreover, when configured to replicate\nto multiple buckets at once, the S3 Replication Service only logs a putObject event to CloudTrail\nfor the first destination bucket. Thus, as long as the malicious actor's bucket isn't the first\nreplication destination, their activity wouldn't be logged in CloudTrail, and might go undetected.\n",
+    "title": "S3 Replication only logs first destination bucket"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "SageMaker Jupyter Notebook"
+    ],
+    "contributor": "https://github.com/a10ns",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/12/02",
+    "discoveredBy": {
+        "domain": "https://www.lightspin.io/",
+        "name": "Gafnit Amiga",
+        "org": "Lightspin",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://www.inawisdom.com/wp-content/uploads/2018/06/SageMaker_Icon_Large.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2021/12/02",
+    "references": [
+        "https://blog.lightspin.io/aws-sagemaker-notebook-takeover-vulnerability"
+    ],
+    "severity": "Medium",
+    "slug": "sagemaker-jupyter-csrf",
+    "summary": "AWS SageMaker Notebook server lacked a check of the Origin header that\nled to a CSRF vulnerability. An attacker could have read sensitive data and execute\narbitrary actions in customer environments. The exact same issue existed in GCP previously.\n",
+    "title": "AWS SageMaker Jupyter Notebook instance CSRF"
+}
+{
+    "affectedPlatforms": [
+        "GCP"
+    ],
+    "affectedServices": [
+        "Google Cloud Monitoring"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/06",
+    "discoveredBy": {
+        "domain": "https://nechudav.blogspot.com/",
+        "name": "David Nechuta",
+        "org": null,
+        "twitter": "https://twitter.com/david_nechuta"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "knownITWExploitation": null,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2020/11/12",
+    "references": [
+        "https://nechudav.blogspot.com/2020/11/31k-ssrf-in-google-cloud-monitoring.html"
+    ],
+    "severity": "Medium",
+    "slug": "ssrf-in-google-cloud-monitoring",
+    "summary": "An SSRF bug in Google Cloud Monitoring's uptime check feature could have been\nused to leak the authentication token of the service account used for these checks.\n",
+    "title": "SSRF in Google Cloud Monitoring"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": [
+        "Glue"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2021/09/30",
+    "discoveredBy": {
+        "domain": "https://orca.security/",
+        "name": "Yanir Tsarimi",
+        "org": "Orca Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1536786724684-63545518d243",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/01/13",
+    "references": [
+        "https://orca.security/resources/blog/aws-glue-vulnerability/",
+        "https://aws.amazon.com/security/security-bulletins/AWS-2022-002/"
+    ],
+    "severity": "Critical",
+    "slug": "superglue",
+    "summary": "Compromise of internal AWS Glue service to assume the glue role in any\nAWS account that used glue.\n",
+    "title": "SuperGlue"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Synapse Analytics"
+    ],
+    "contributor": "https://github.com/mer-b",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2022/03/10",
+    "discoveredBy": {
+        "domain": "https://www.tenable.com/",
+        "name": null,
+        "org": "Tenable",
+        "twitter": null
+    },
+    "exploitabilityPeriod": "Until June 1st, 2022",
+    "image": "https://cdn.pixabay.com/photo/2016/06/26/23/47/poison-1481596_1280.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/06/13",
+    "references": [
+        "https://medium.com/tenable-techblog/microsoft-azure-synapse-pwnalytics-87c99c036291",
+        "https://www.tenable.com/security/research/tra-2022-19",
+        "https://www.tenable.com/security/research/tra-2022-20"
+    ],
+    "severity": "Medium",
+    "slug": "synapse-pwnalytics",
+    "summary": "Tenable Research discovered a privilege escalation flaw that allows a user to escalate privileges to that \nof the root user within the context of a Spark VM. They also discovered a separate flaw that allows a user to poison \nthe hosts file on all nodes in their Spark pool, which would allow an attacker to redirect subsets of traffic and snoop on \nservices users generally do not have access to.\n",
+    "title": "Privilege escalation and file poisoning in Synapse Analytics"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Synapse Analytics"
+    ],
+    "contributor": "https://github.com/korniko98",
+    "cves": [
+        null
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2022/06/01",
+    "discoveredBy": {
+        "domain": "https://orca.security/",
+        "name": "Tzah Pahima",
+        "org": "Orca Security",
+        "twitter": "TzahPahima"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/synapse_spark_lpe.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/09/01",
+    "references": [
+        "https://orca.security/resources/blog/synapse-local-privilege-escalation-vulnerability-spark/",
+        "https://msrc-blog.microsoft.com/2022/09/01/vulnerability-fixed-in-azure-synapse-spark/"
+    ],
+    "severity": "Medium",
+    "slug": "synapse-spark-lpe",
+    "summary": "Azure Synapse Analytics is an analytics service for processing data using various runtimes,\namong them Apache Spark. Synapse provided users the capability to mount Azure File Shares to\ntheir Apache Spark Pools via a script called filesharemount.sh that would execute with elevated\nprivileges. This script would mount the File Share to the /synfs directory. There was a race\ncondition in the script where, if successfully exploited, a user could execute the chown command\nto change the ownership of any directory\u2014including the one containing the filesharemount.sh itself.\nThis enabled a user to execute additional code with root privileges. On its own, the impact of this\nvulnerability was limited to the user\u2019s own Spark pool, and did not permit cross-tenant access.\nFollowing disclosure, Microsoft disabled the ability to mount Azure File Shares to Spark pools,\nand recommended mounting Data Lake Storage Gen2 or Azure Blob Storage instead.\n",
+    "title": "Synapse Spark LPE"
+}
+{
+    "affectedPlatforms": [
+        "Azure"
+    ],
+    "affectedServices": [
+        "Synapse Analytics",
+        "Data Factory"
+    ],
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": [
+        "CVE-2022-29972"
+    ],
+    "detectionMethods": null,
+    "disclosedAt": "2022/01/04",
+    "discoveredBy": {
+        "domain": "https://orca.security/",
+        "name": "Tzah Pahima",
+        "org": "Orca Security",
+        "twitter": null
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "knownITWExploitation": false,
+    "manualRemediation": "None required\n",
+    "publishedAt": "2022/05/09",
+    "references": [
+        "https://orca.security/resources/blog/azure-synapse-analytics-security-advisory/",
+        "https://orca.security/resources/blog/synlapse-critical-azure-synapse-analytics-service-vulnerability/",
+        "https://msrc-blog.microsoft.com/2022/05/09/vulnerability-mitigated-in-the-third-party-data-connector-used-in-azure-synapse-pipelines-and-azure-data-factory-cve-2022-29972/"
+    ],
+    "severity": "Critical",
+    "slug": "synlapse",
+    "summary": "Azure Synapse Analytics and Azure Data Factory were vulnerable to cross-tenant access and code execution.\nThis was made possible via a combination of (1) a shell injection RCE vulnerability in the integration runtime,\n(2) credentials for multiple customers stored on a shared host and (3) an insecure management server API.\n",
+    "title": "Synlapse"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/0xdabbad00",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2020/07/08",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ben Bridts",
+        "org": null,
+        "twitter": "benbridts"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://cdn.pixabay.com/photo/2022/02/13/02/01/terms-7010195_1280.jpg",
+    "knownITWExploitation": null,
+    "manualRemediation": "Customers can opt out of this data usage by following the instructions included in the linked reference.\n",
+    "publishedAt": "2022/01/06",
+    "references": [
+        "https://twitter.com/benbridts/status/1280934515305824256",
+        "https://summitroute.com/blog/2021/01/06/opting_out_of_aws_ai_data_usage/"
+    ],
+    "severity": null,
+    "slug": "terms-conditions-customer-data",
+    "summary": "Use of the AI services on AWS allows customer data to be moved outside of\nthe regions it is used in and potentially shared with third-parties.\nNote: This issue is outside the scope of this database's usual criteria for inclusion, but has\nbeen kept for historic reasons, as it was included in the original CSP Security Mistakes dataset.\n",
+    "title": "AWS AI services ToS allow sharing of customer data"
+}
+{
+    "affectedPlatforms": [
+        "AWS"
+    ],
+    "affectedServices": null,
+    "contributor": "https://github.com/RyanJarv",
+    "cves": null,
+    "detectionMethods": null,
+    "disclosedAt": "2019/05/13",
+    "discoveredBy": {
+        "domain": null,
+        "name": "Ryan Gerstenkorn",
+        "org": null,
+        "twitter": "Ryan_Jarv"
+    },
+    "exploitabilityPeriod": null,
+    "image": "https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/images/unauditible_hosted_zones.jpg",
+    "knownITWExploitation": false,
+    "manualRemediation": "Audit your VPC hosted zones\n",
+    "publishedAt": "2019/05/24",
+    "references": [
+        "https://twitter.com/__steele/status/1273748905826455552",
+        "https://blog.ryanjarv.sh/2019/05/24/backdooring-route53-with-cross-account-dns.html"
+    ],
+    "severity": "Low",
+    "slug": "vpc-hosted-zones-unauditable",
+    "summary": "For 6 years, it was not possible to see what hosted zones an attacker\nmay have created in an account. This issue could be viewed as a business decision\nthat adding the ability to viewing this data was not worthwhile, but the delay\nis significant and would allow someone that had compromised an environment to\nmaintain a backdoor.\n",
+    "title": "VPC Hosted Zones unauditable"
+}
