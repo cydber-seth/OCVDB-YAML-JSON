@@ -15,9 +15,8 @@ Commented the crap out of the file.
 
 # WARNING run in an empty folder! (It will delete all yaml/text files during clean up)
 
-Example outputs (same data just run at different times)
-- OCVDB-20221006-214317.json
-- OCVDB-20221006-214446.json
+Example output
+- OCVDB-20221012-211235.json
 
 To Do
 - process all in memory
