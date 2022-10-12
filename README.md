@@ -13,13 +13,13 @@ Python File: Open-CVDB-JSONify.py
 
 Commented the crap out of the file.
 
-WARNING run in an empty folder! (It will delete all yaml/text files during clean up)
+# WARNING run in an empty folder! (It will delete all yaml/text files during clean up)
 
 Example outputs (same data just run at different times)
 - OCVDB-20221006-214317.json
 - OCVDB-20221006-214446.json
 
-to do
+To Do
 - process all in memory
 - create CSV output
 - follow references to grab additional info.
