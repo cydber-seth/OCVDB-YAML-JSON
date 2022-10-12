@@ -3,6 +3,7 @@
 # All credit to CloudVulnDB.org and github.com/wiz-sec/open-cvdb
 # Author: Seth
 # Created: 5-October-2022
+
 # RequiredModules
 import os #Inbuilt module used for directory listing
 import yaml #Additional yaml module to understand input files
@@ -12,21 +13,30 @@ import requests #Inbuilt get content from web
 from bs4 import BeautifulSoup # Additional Module to clean up web page for processing
 import wget #inbuilt module to grab YAML files.
 from os import listdir
+
 #Variables
 github_url = 'https://github.com/wiz-sec/open-cvdb/tree/main/vulnerabilities/'
-path = '.\\' #use current path
 date = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") #get date and time into string for output file name
-output_file = "OCVDB-"+date+".json" #set output file name with date
 baseurl= 'https://raw.githubusercontent.com/wiz-sec/open-cvdb/main/vulnerabilities/'
 page =requests.get(github_url) #Set variable for page to be opened and url to be concatenated 
+
+#currentpath and JSON output file
+path = '.\\' #use current path
+output_file = "OCVDB-"+date+".json" #set output file name with date
+with open(output_file,'w',encoding='utf-8') as json_header: #open file in write mode
+    json_header.write('{ \"type\": \"bundle\",\"filename\": \"'+output_file+'\", \"objects\": [ ') #write json header to file
+json_header.close() #close file to ensure it saves  
+
 # Text file of current Yaml Files on OCVDB
 newfile = open('yamllinks.txt','w') # Creating a new file to store the yaml file links
+
 # Clean Webpage for Processing
 soup = BeautifulSoup(page.content) # make page readable
 soup.prettify() # clean up the page
+
 # Find all the links on the page that end in .yaml and write them into the text file
 for anchor in soup.findAll('a', href=True): #look for links
-    links = anchor['href']
+    links = anchor['href'] #set lookup on page for link
     if links.endswith('.yaml'): #only use links that end in .yaml
         links= links.split('/')[-1]
         newfile.write(links + '\n') #write file name to list
@@ -53,14 +63,19 @@ for newfile in listdir(path):
 print(newfile)
 print(' has been removed')
 #Processing files into json
+
 with os.scandir(path) as dirlist: #get directory listing
     for entry in dirlist: #do the following for each entry in directory listing
         if entry.name.endswith(".yaml") and entry.is_file(): #but only do it for yaml files
             with open(entry.name, 'r', encoding='utf-8') as yaml_in, open(output_file, "a") as json_out: #force utf8 for yaml files being read and open output in append mode
                 yaml_object = yaml.safe_load(yaml_in) # yaml_object will be a list or a dict
-                json.dump(yaml_object, json_out, indent=4, sort_keys=False) #dump yaml data into a jsonfile and make it pretty
-                json_out.write("\n")
+                json.dump(yaml_object, json_out, sort_keys=False) #dump yaml data into a jsonfile and make it pretty
+                json_out.write(",") #add comma serperation for entry 
                 print(entry.name, "done") #on screen prompt for yaml file processed
+date2 = datetime.datetime.now().strftime("%Y%m%d-%H%M%S") #get date and time into string for output file name
+with open(output_file,'a') as json_footer: #open file in apend mode
+    json_footer.write(' { \"title\": \"final entry @ ' +date2+ '\"}	]}')  #write json footer to file
+json_footer.close() #close file to ensure it saves   
 print(" ")
 print("Process complete, "+output_file+" created.") #all done 
 print('Yaml files being removed')
